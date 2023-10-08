@@ -1,0 +1,359 @@
+@media (orientation: portrait) {
+    nav {
+        flex-direction: column;
+    }
+
+    #navlinks {
+        flex-direction: column;
+    }
+
+    #producten {
+        flex-direction: column;
+    }
+
+    form div {
+        flex-direction: column;
+    }
+
+    footer div {
+        flex-direction: column;
+    }
+
+    footer .socials {
+        flex-direction: column;
+    }
+}
+
+@media (width <=426px) {
+    #chat-window {
+        width: 40vw;
+    }
+
+    #chat-title {
+        font-size: small;
+    }
+
+    #chat-content {
+        display: none;
+    }
+
+    #chat-question {
+        height: 3vw;
+    }
+}
+
+@font-face {
+    font-family: muktaMalar;
+    src: url(./MuktaMalar-Light.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: muktaMalar;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    overflow-x: hidden;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1;
+    border-bottom-style: solid;
+    border-bottom-color: red;
+    border-width: 5px;
+}
+
+nav a:hover {
+    color: darkblue;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+#navlinks {
+    padding: 0vw 7vw;
+}
+
+nav a {
+    padding: 0vw 1vw;
+}
+
+#linkbox {
+    background-color: red;
+    padding: 1vw 2vw;
+    color: white;
+    border-radius: 9px;
+    font-weight: bold;
+}
+
+#linkbox:hover {
+    background-color: rgb(115, 115, 255);
+}
+
+.logobutton {
+    padding: 10px 2vw;
+    margin: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 10vw;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(img/backgroundIMG.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10vw;
+    color: white;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+header p {
+    font-size: 25px;
+    padding: 4vw 0vw;
+}
+
+header a {
+    font-size: 30px;
+    background-color: red;
+    padding: 1vw 3vw;
+    margin: 4vw;
+    color: white;
+    border-radius: 11px;
+}
+
+header a:hover {
+    background-color: rgb(115, 115, 255);
+    text-decoration: underline;
+}
+
+#product h2 {
+    display: flex;
+    justify-content: center;
+    padding: 6vw 0vw 1vw;
+    font-size: 2vw;
+}
+
+#producten {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0vw 3vw 4vw;
+    perspective: 100px;
+}
+
+#producten div {
+    background-color: rgb(234, 243, 255);
+    padding: 2vw 4vw;
+    border-color: red;
+    border-style: solid;
+    border-width: 10px;
+    margin: 2vw;
+    transition: all 0.7s ease-out;
+    filter: saturate(10%);
+    border-radius: 2vw;
+}
+
+#producten div:hover {
+    transform: scale(1.1);
+    filter: saturate(100%);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.315);
+}
+
+#producten img {
+    width: 20vw;
+    height: 20vw;
+}
+
+#producten a {
+    background-color: red;
+    padding: 7px 25px;
+    border-radius: 10px;
+    color: white;
+}
+
+#producten a:hover {
+    background-color: rgb(115, 115, 255);
+}
+
+#form {
+    background-color: rgb(231, 231, 231);
+}
+
+#form h2 {
+    display: flex;
+    justify-content: center;
+    padding: 7vw 0vw 0vw;
+    font-size: 2vw;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vw 1vw 6vw;
+}
+
+form div {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    width: 35%;
+}
+
+label {
+    font-weight: bold;
+}
+
+#email {
+    width: 50%;
+}
+
+select {
+    width: 70%;
+}
+
+textarea {
+    width: 70%;
+    height: 75px;
+}
+
+button {
+    width: 100%;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgb(47, 60, 148);
+}
+
+footer {
+    display: flex;
+    background-color: rgb(47, 60, 148);
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+footer .logo {
+    padding: 1vw 0px 0px 0px;
+    margin: 1vw;
+}
+
+#info {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 1vw 3vw 1vw;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+footer a {
+    padding: 0vw 5vw;
+    margin: 16px;
+    color: white;
+}
+
+.socials {
+    width: 3vw;
+    margin: 5px;
+}
+
+#chat-window {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    background-color: rgb(115, 115, 255);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18vh;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+    transform: translateX(300px);
+
+    animation: showchat 1s forwards 1s ease-out;
+}
+
+@keyframes showchat {
+    0% {
+        transform: translateX(300px);
+        filter: blur(10px);
+    }
+
+    85% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: none;
+        filter: none;
+    }
+}
+
+@keyframes show-conversation {
+    from {
+        height: 20vh;
+    }
+
+    to {
+        height: 40vh;
+    }
+}
+
+#chat-content {
+    flex: 1 0 0;
+    background-color: rgb(234, 243, 255);
+    font-size: 0.8rem;
+    padding: 10px;
+    animation: show-conversation 1s ease-out forwards;
+}
+
+#chat-title {
+    font-weight: bold;
+    flex: 0;
+    color: white;
+}
+
+#chat-question {
+    flex: 0;
+    padding: 30px 0px;
+}

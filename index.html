@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eind Opdracht</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logobutton">
+            <a href="./index.html"><img src="./img/PopCap_2012_logo.svg.png" class="logo"></a>
+        </div>
+
+        <div id="navlinks">
+            <div>
+                <a href="./index.html">Contact</a>
+            </div>
+            <div>
+                <a href="./index.html">Form</a>
+            </div>
+            <div>
+                <a href="./index.html">Consoles</a>
+            </div>
+            <div>
+                <a href="./index.html">Games</a>
+            </div>
+            <a href="./index.html" id="linkbox">Home</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>The best games</h1>
+        <p>On this page you can find the best games of all time (fact) for the cheapest prices.</p>
+        <div>
+            <a href="./index.html">Games</a>
+            <a href="./index.html">Consoles</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="product">
+            <div>
+                <h2>Games</h2>
+            </div>
+
+            <div id="producten">
+                <div>
+                    <img src="./img/luigi_s_mansion_4__the_ominous_castle_by_deaththeshadow_dfw0p74-fullview.jpg">
+                    <h3>Luigi's mansion 4</h3>
+                    <p>Join Luigi and Daisy on a quest to defeat King Boo. King Boo is back and is turning Luigi's
+                        friends into paintings again. Team up with Daisy to save the Mushroom Kingdom.</p>
+                    <a href="./index.html">Buy now!</a>
+                </div>
+
+                <div>
+                    <img src="./img/gw3.webp">
+                    <h3>Plants vs. Zombies GW3</h3>
+                    <p>The game that came out after the succes of Plants vs. Zombies Garden Warfare 2! Some people think
+                        that Battle for Neighborville came out first... for some reason.</p>
+                    <a href="./index.html">Buy now!</a>
+                </div>
+
+                <div>
+                    <img src="./img/D3FHP80U8AAVsGE.jpg">
+                    <h3>Sonic Royale</h3>
+                    <p>It's Sonic but he has a gun, inspired by Shadow the Hedgehog. In this new entry of Sonic the
+                        Hedgehog you can now play over 4 million different characters.</p>
+                    <a href="./index.html">Buy now!</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="form">
+
+            <h2>Form</h2>
+
+            <form>
+                <div>
+                    <label for="voornaam">First name</label>
+                    <input type="text" name="voornaam" id="voornaam" required>
+
+                    <label for="achternaam">Last name</label>
+                    <input type="text" name="achternaam" id="achternaam" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div>
+                    <label for="woonplaats">Residence</label>
+                    <input type="text" name="woonplaats" id="woonplaats" required>
+
+                    <label for="geboortedatum">Order date</label>
+                    <input type="date" name="geboortedatum" id="geboortedatum" required>
+                </div>
+
+                <div>
+                    <label for="onderwerp">Product</label>
+                    <select id="onderwerp" name="onderwerp" required>
+                        <option value>Select a product...</option>
+                        <option value="optie1">Luigi's mansion 4</option>
+                        <option value="optie2">Plants vs zombies GW3</option>
+                        <option value="optie3">Sonic Royale</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="bericht">Request</label>
+                    <textarea placeholder="Type here if you have specific order requests"></textarea>
+                </div>
+
+                <div>
+                    <label for="nieuwsbericht">Sign in on our newsletter?</label>
+                    <input type="radio" name="menu" id="ja" value="ja" required>
+                    <label for="ja">Yes</label>
+
+                    <input type="radio" name="menu" id="nee" value="nee">
+
+                    <label for="ja">No</label>
+                </div>
+
+                <div>
+                    <label for="akkoord">I agree with the Terms and Conditions</label>
+                    <input type="checkbox" name="akkoord" id="akkoord" required>
+                </div>
+
+                <div>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src="./img/PopCap_2012_logo.svg.png" class="logo">
+
+            <div id="info">
+                <p>Copyright 2023 Selen Ozdemir</p>
+                <a href="./index.html">Privacy declaration</a>
+                <a href="./index.html">Terms and Conditions</a>
+                <a href="./index.html">Cookies</a>
+                <a href="./index.html">Contact</a>
+            </div>
+
+            <img src="./img/instagram_logo_icon_206739.png" class="socials">
+            <img src="./img/46-facebook-512.webp" class="socials">
+            <img src="./img/4902485.png" class="socials">
+        </div>
+    </footer>
+
+    <div id="chat-window">
+        <div id="chat-title">Chat with an expert</div>
+        <div id="chat-content">What is your question?</div>
+        <input type="text" id="chat-question" placeholder="Type your question here">
+    </div>
+</body>
+
+</html>
